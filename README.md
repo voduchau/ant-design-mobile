@@ -20,6 +20,25 @@
   </h4>
 </div>
 
+```javascript
+import KESettingLayout from '@common/setting-layout';
+import {THIRD_PARTY_LICENSES} from '@constant/licenses';
+import {DOCUMENT_ROOT_ID} from '@constant/index';
+...
+// Initialize an instance
+const layout = new KESettingLayout({
+  rootElementId: DOCUMENT_ROOT_ID,
+  licenses: THIRD_PARTY_LICENSES,
+  fileNameExport: <file-name-to-export>,
+  pluginId: <plugin-id>
+});
+
+// Set the content for the layout body through the method setContent
+layout.setContent(containerEl);
+...
+...
+```
+
 ```bash
 $ npm install --save antd-mobile
 # or
